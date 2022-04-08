@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 WORKDIR /app
 
-RUN apk --no-cache add openjdk8
+RUN apk --no-cache add openjdk11
 RUN yarn global add firebase-tools
 
 ADD firebase.json .
